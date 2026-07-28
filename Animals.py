@@ -1,3 +1,37 @@
+# ==========================================================
+# ZooProject
+#
+# A simple console application written in Python using
+# object-oriented programming (OOP).
+#
+# Features:
+# - Create new animals
+# - Display the list of animals
+# - Feed animals
+# - Play with animals
+# - Let animals sleep
+# - View animal information
+#
+# Each animal has:
+# - Name
+# - Species
+# - Age
+# - Satiety level (0–100%)
+#
+# The project demonstrates:
+# - Classes and objects
+# - Constructors (__init__)
+# - Instance and class attributes
+# - Static methods
+# - Lists
+# - Loops
+# - Exception handling
+# - Match-case statements
+#
+# Author: Pavel Kodochigov
+# Language: Python 3
+# ==========================================================
+
 class Animal:
     all_instances = []
     def __init__(self, name, species, age, eaten):
@@ -26,7 +60,7 @@ class Animal:
     def play(self):
         if (self.eaten - 15) < 0 :
             self.eaten = 0
-            print(f'{self.name} is very hungry and doesn't want to play.')
+            print(f'{self.name} is very hungry and doesn\'t want to play.')
         else :
             self.eaten -= 15
             print(f'{self.name} is playing.')
