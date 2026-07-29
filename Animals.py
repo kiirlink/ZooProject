@@ -137,7 +137,7 @@ while True:
                     case _:
                         print("Unknown command")
             except IndexError:
-                print("There is no such animal in our zoo")
+                print("There is no such animal in our zoo!!!")
             except ValueError:
                 print("Please enter a number")
         case 3:
